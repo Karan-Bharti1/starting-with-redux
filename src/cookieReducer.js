@@ -4,8 +4,8 @@ switch (action.type) {
     case "cookies/added":     
 return {value: state.value+1}
         
-case "cookies/remove":
-    return {value: state.value+1}
+case "cookies/removed":
+    return {value: state.value-1}
     default:
         return state
 }
